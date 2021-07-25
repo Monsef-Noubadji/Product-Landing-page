@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Lato',sans-serif;
+}
+body{
+  background:#eee;
+}
+
+#header{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  min-height:75px;
+  overflow:none;
+}
+.logo{
+  width:60vw;
+  
+}
+.logo > img{
+  width:100%;
+  height:100%;
+  max-width:300px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-left:20px;
+}
+#nav-bar{
+  font-weight:300;
+  position:sticky;
+}
+nav > ul{
+ width:35vw;
+ display:flex;
+ justify-content:space-around;
+ flex-direction:row;
+}
+li{
+  list-style:none;
+}
+#two{
+  margin-right: 40px;
+}
+#three{
+  margin-right: 40px;
+}
+a{
+  text-decoration:none;
+  color:#000;
+}
+#contact{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  margin-top:10px;
+  height:200px;
+}
+#contact h2{
+  font-weight:bold;
+  margin-bottom:20px;
+}
+#contact input[type=email]{
+  max-width:375px;
+  width:100%;
+  padding:6px;
+  color:#000;
+  font-weight:bold;
+  font-size:0.8rem;
+
+}
+.btn{
+  max-width:175px;
+  width:100%;
+  padding:6px;
+  text-transform:uppercase;
+  background-color:#f1c40f;
+  border:none;
+  border-radius:3px;
+  font-weight:bold;
+  font-size:1.1rem;
+  margin-top:10px;
+  transition:0.6s;
+}
+#contact input[type=submit]:hover{
+    background-color:orange;
+}
+.features{
+  max-width:1000px;
+  width:100%;
+  margin: 0 auto;
+}
+section{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.item1,.item2,.item3{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:40px;
+  margin-left:48px;
+}
+h2{
+  font-weight:bold;
+}
+.item1 > .icon{
+  color:darkorange;
+  margin-right:40px;
+}
+.item2 > .icon ,.item3 > .icon{
+  color:darkorange;
+  margin-right:40px;
+}
+#HIW{
+  width:100%;
+  height: 200px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-top:70px;
+}
+
+@media screen and(max-width:720px)
+{
+ nav > ul{
+ width: 35vw;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+  }
+}
+.pricing{
+    height:300px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    clear: both;
+    outline: #000;
+    z-index: 23;
+}
+footer > .footer{
+  background: #bbb;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
